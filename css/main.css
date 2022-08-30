@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+}
+
+.switch {
+  height: 30px;
+  width: 60px;
+  line-height: 30px;
+  background-color: rgb(6, 32, 6);
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: orange;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.btnLogin {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  border-style: hidden;
+  background-color: #202923;
+}
+body.dark .btnLogin {
+  background-color: #f1f1f1;
+}
+.btnLogin span {
+  color: #f1f1f1;
+}
+body.dark .btnLogin span {
+  color: #202923;
+}
+
+.login {
+  background-color: rgb(55, 55, 106);
+  color: #fff;
+}
+
+/*header*/
+header .nav {
+  background: rgb(87, 156, 70);
+  background: linear-gradient(180deg, rgba(97, 221, 66, 0.841) 0%, rgb(146, 207, 129) 95%, rgb(154, 209, 140) 100%);
+}
+body.dark header .nav {
+  background-image: linear-gradient(180deg, rgb(112, 138, 107) 0%, rgb(88, 128, 85) 100%);
+}
+header .navAdicional {
+  background-color: #f1f1f1;
+}
+body.dark header .navAdicional {
+  background-image: linear-gradient(160deg, rgb(113, 158, 110), rgb(89, 116, 87));
+}
+
+.logo1 {
+  max-width: 80px;
+  height: 40px;
+}
+
+/*cuerpo*/
+.textos {
+  color: #202923;
+}
+body.dark .textos {
+  color: #f1f1f1;
+}
+
+.nosotrosHero {
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  background-color: rgb(202, 231, 189);
+}
+.nosotrosHero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/img/abuelos.jpg");
+  background-attachment: fixed;
+  filter: opacity(0.2);
+}
+body.dark .nosotrosHero::before {
+  filter: brightness(0.54);
+}
+.nosotrosHero h1 {
+  position: relative;
+  color: #202923;
+}
+.nosotrosHero div p {
+  position: relative;
+  color: #202923;
+}
+
+.nosotros2 {
+  background-color: #dfdfdf;
+}
+body.dark .nosotros2 {
+  background-color: #354538;
+}
+
+.imgAbuelos {
+  background-attachment: fixed;
+}
+
+.fotoNos {
+  max-height: 250px;
+}
+
+.articulos {
+  background-color: rgb(206, 255, 196);
+  color: #202923;
+}
+body.dark .articulos {
+  background-color: rgb(70, 84, 67);
+  color: #f1f1f1;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.preguntas1 {
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  background-color: rgb(202, 231, 189);
+}
+.preguntas1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/img/fondoHero.jpg");
+  background-attachment: fixed;
+  filter: opacity(0.2);
+}
+body.dark .preguntas1::before {
+  filter: brightness(0.54);
+}
+.preguntas1 h1 {
+  position: relative;
+  color: #202923;
+}
+
+.mihero {
+  min-height: 100vh;
+  background-image: url("/img/fondoHero.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+.mihero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/img/fondoHero.jpg");
+}
+body.dark .mihero::before {
+  filter: brightness(0.54);
+}
+.mihero h1, .mihero h2, .mihero p {
+  position: relative;
+  color: #202923;
+  max-width: 65%;
+}
+body.dark .mihero h1, body.dark .mihero h2, body.dark .mihero p {
+  color: #f1f1f1;
+}
+
+.anchoCard {
+  width: 15rem;
+}
+
+/*CUERPO TIENDA*/
+.estiloBtnCategorias {
+  padding: 15px;
+  border-radius: 5px;
+  margin: 2px 2px;
+  text-align: center;
+  background-color: rgb(83, 186, 67);
+  color: #f1f1f1;
+  font-weight: bold;
+  cursor: pointer;
+  max-height: 60px;
+}
+body.dark .estiloBtnCategorias {
+  color: #202923;
+  background-color: rgb(122, 218, 101);
+}
+.estiloBtnCategorias:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+body.dark .estiloBtnCategorias:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+
+.btnsNav {
+  background-color: rgb(83, 186, 67);
+  border-style: none;
+}
+.btnsNav:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+body.dark .btnsNav:hover {
+  background-color: rgb(83, 186, 67);
+  color: #f1f1f1;
+}
+body.dark .btnsNav {
+  color: #202923;
+  background-color: rgb(83, 186, 67);
+  border-style: none;
+}
+
+.tarjetasListado {
+  margin: 5px;
+  background-color: rgb(206, 255, 196);
+  padding: 10px;
+}
+body.dark .tarjetasListado {
+  color: #f1f1f1;
+  background-color: rgb(70, 84, 67);
+}
+
+.estiloBtnAgregar {
+  border-radius: 10px;
+  padding: 4px;
+  background-color: rgb(83, 186, 67);
+  color: #f1f1f1;
+}
+.estiloBtnAgregar:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+body.dark .estiloBtnAgregar:hover {
+  background-color: #202923;
+  color: #f1f1f1;
+}
+body.dark .estiloBtnAgregar {
+  color: #202923;
+  background-color: rgb(122, 218, 101);
+}
+
+.botonCarrito {
+  color: #f1f1f1;
+  height: 5rem;
+  width: 300px;
+}
+.botonCarrito:hover {
+  background-color: white;
+  color: #202923;
+}
+body.dark .botonCarrito:hover {
+  background-color: #f1f1f1;
+}
+body.dark .botonCarrito {
+  color: #202923;
+  background-color: rgb(122, 218, 101);
+}
+
+.btnOrdenar {
+  border-radius: 5px;
+  padding: 1px;
+  text-align: center;
+  background-color: rgb(83, 186, 67);
+  color: #f1f1f1;
+  font-weight: bold;
+  height: 40px;
+}
+
+/*CARRITO DE COMPRAS*/
+.estiloCarrito {
+  background-color: #f1f1f1;
+}
+body.dark .estiloCarrito {
+  color: #f1f1f1;
+  background-color: rgb(70, 84, 67);
+}
+
+.tarjetasCarrito {
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(206, 255, 196);
+  width: 15rem;
+  padding: 5px;
+}
+body.dark .tarjetasCarrito {
+  color: #f1f1f1;
+  background-color: #202923;
+}
+
+.textoCarrito {
+  font-weight: bold;
+}
+
+.estiloBtnBorrar {
+  border-radius: 10px;
+  padding: 2px 15px;
+  background-color: #202923;
+  color: #f1f1f1;
+}
+.estiloBtnBorrar:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+body.dark .estiloBtnBorrar {
+  background-color: rgb(122, 218, 101);
+  color: #202923;
+}
+
+.btnFinCompra {
+  border-radius: 10px;
+  padding: 20px 38px;
+  background-color: rgb(206, 255, 196);
+  color: #202923;
+}
+.btnFinCompra:hover {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+body.dark .btnFinCompra {
+  background-color: rgb(122, 218, 101);
+  color: #202923;
+}
+
+/*FOOTER*/
+footer {
+  background: rgb(87, 156, 70);
+  background: linear-gradient(to top, rgba(42, 126, 23, 0.841) 0%, rgb(146, 207, 129) 50%, rgb(176, 230, 162) 100%);
+}
+body.dark footer {
+  background-image: linear-gradient(rgb(88, 104, 85), rgb(69, 92, 67));
+}
+footer svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #f1f1f1;
+}
+footer svg:hover {
+  fill: rgb(70, 84, 67);
+}
+footer .itemsFooter {
+  color: #202923;
+}
+body.dark footer .itemsFooter {
+  color: rgb(201, 201, 201);
+}
+
+.copy {
+  color: #f1f1f1;
+}
+body.dark .copy {
+  color: #f1f1f1;
+}
+
+/*mediaqueries*/
+/* TABLETS  */
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .mihero h1, .mihero h2, .mihero p {
+    max-width: 100%;
+  }
+  main div .video {
+    width: 100%;
+    height: 50vh;
+  }
+  button {
+    text-transform: uppercase;
+  }
+  .anchoCard {
+    width: 25rem;
+  }
+}
+/* Smartphone */
+@media (max-width: 479px) {
+  body {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+  }
+  button {
+    text-transform: uppercase;
+  }
+  .anchoCard {
+    width: 25rem;
+  }
+}
+#cuerpo {
+  background-color: #f1f1f1;
+  color: #202923;
+}
+#cuerpo.dark {
+  background-color: #202923;
+  color: #f1f1f1;
+}/*# sourceMappingURL=main.css.map */

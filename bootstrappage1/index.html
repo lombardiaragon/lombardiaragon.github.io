@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==== Title ====-->
+    <title>Boostrap page</title>
+    <!--==== Bootstrap css ====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--===== AOS css =====-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!--===== Swiper JS css =====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!--===== Styles css =====-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <!--====== Start Header Section ======-->
+  <header class="header" id="header">
+    <nav class="navbar navbar-expand-lg fw-semibold">
+      <div class="container">
+        <a class="navbar-brand" href="#">MI LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MI LOGO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Mí</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#">First</a></li>
+                  <li><a class="dropdown-item" href="#">Second</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Third</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-2 mt-md-0" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn myBtn1" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--====== End Header Section ======-->
+  <main>
+   <!--====== Start Hero Section ======-->
+    <section class="hero1 container my-5 position-relative">
+      <div class="shape1 position-absolute scene"><div data-depth="5" class="circle1"></div></div>
+      <div class="shape2 position-absolute scene"><div data-depth="6"  class="circle2"></div></div>
+      <div class="shape3 position-absolute scene"><div data-depth="8" class="circle3"></div></div>
+      <svg class="curve-one " viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path class="path" d="M36.9,-64.6C46.5,-58.3,52.1,-45.8,57.2,-34C62.2,-22.2,66.7,-11.1,62.9,-2.2C59.1,6.7,47,13.4,43.1,27.2C39.2,41,43.4,61.8,37.6,67.8C31.8,73.9,15.9,65.2,0.2,64.9C-15.5,64.5,-31.1,72.6,-42.1,69.6C-53.2,66.6,-59.7,52.4,-58.9,39C-58,25.5,-49.9,12.7,-53,-1.8C-56.2,-16.4,-70.8,-32.8,-70.6,-44.6C-70.5,-56.5,-55.7,-63.7,-41.5,-67.2C-27.3,-70.8,-13.6,-70.7,0,-70.7C13.6,-70.7,27.3,-70.8,36.9,-64.6Z" transform="translate(100 100)" />
+      </svg>
+      <div class="row align-items-center">
+        <div class="col-lg-7 p-5">
+          <div class="row gap-3">
+            <h1 data-aos="fade-up"
+            data-aos-delay="50"
+            class="display-4 fw-bold lh-1">Lorem ipsum dolor sit amet.</h1>
+            <p data-aos="fade-up" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempore cum pariatur, debitis nemo consectetur quam aliquid, velit, at corrupti accusantium dicta asperiores alias deserunt iusto optio nihil fugit odio.</p>
+            <div data-aos="fade-right" class="d-flex flex-column flex-sm-row gap-3">
+              <button type="button" class="btn myBtn1 btn-lg px-5 py-2 me-2 rounded-pill">READ MORE</button>
+              <button type="button" class="btn myBtn2 btn-lg px-5 py-2 rounded-pill">DOWNLOAD CV</button>
+            </div>
+          </div>
+        </div>
+        <div  class="imgContainer col-lg-5 p-0 rounded-1 overflow-hidden shadow-lg animated-float-y">
+          <img class="img1 img-fluid img rounded-lg-3 bgOne" src="images/Finance app_Isometric.svg" alt="" width="720">
+        </div>
+      </div>
+    </section>
+    <!--====== End Hero Section ======-->
+
+    <!--====== Start Features Section ======-->
+    <section class="px-md-4 hero2 bgGradient1 position-relative">
+      <div data-depth="5" class="circle4 position-absolute"></div>
+      <div class="circle5 position-absolute"></div>
+      <div class="circle6 position-absolute"></div>
+        <div class="container">
+          <div data-aos="fade-up" class="row justify-content-center">
+              <div class='col-8 col-md-6 my-5'>
+                <div class="row justify-content-center">
+                  <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge2 p-2">Lorem, ipsum dolor.</span>
+                </div>
+                <h2 class="h2 text-center py-2 fw-bolder colorOne">Features that Help you create better</h2>
+              </div>
+          </div>
+          <div class="row gap-3 justify-content-center py-3 ">
+              <div data-aos="fade-right" class="myCard myCard1 col-3 border shadow-lg rounded-1 p-4 col-12 col-md-8 col-lg-3">
+                  <div class="icon display-2 mb-3">
+                    <i class="myIcon p-2 rounded-1 fa-solid fa-sliders"></i>
+                  </div>
+                  <h3>Featured title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quam debitis nemo exercitationem, ullam excepturi voluptas at incidunt molestiae officiis molestias. Id obcaecati labore illum mollitia tempore libero cupiditate vero..</p>
+                  <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                      Call to action
+                  </a>
+              </div>
+              <div data-aos="flip-up" class="myCard myCard1 col-3 border shadow-lg rounded-1 p-4 col-12 col-md-8 col-lg-3">
+                  <div class="icon display-2 mb-3">
+                    <i class="myIcon p-2 rounded-1 fa-solid fa-tty"></i>
+                  </div>
+                  <h3>Featured title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, aliquid. Lorem ipsum dolor sit amet.</p>
+                  <a href="#" class="icon-link d-flex align-items-center text-decoration-underline">
+                      Call to action
+                  </a>
+              </div>
+              <div data-aos="fade-left" class="myCard myCard1 col-3 border shadow-lg rounded-1 p-4 col-12 col-md-8 col-lg-3">
+                  <div class="icon display-2 mb-3">
+                    <i class="myIcon p-2 rounded-1 fa-regular fa-calendar"></i>
+                  </div>
+                  <h3>Featured title</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit deleniti temporibus repellendus possimus illo nisi officia?</p>
+                  <a href="#" class="icon-link d-flex align-items-center text-decoration-underline">
+                      Call to action
+                  </a>
+              </div>
+          </div>
+        </div>
+    </section>
+    <!--====== End Features Section ======-->
+
+    <!--====== Start Fancy Text Block Section ======-->
+    <section class="px-md-4 py-5 hero3">
+      <div class="container  px-4 py-5">
+        <div class="row p-5 g-5">
+          <div class="col-lg-6 col-xl-5 animated-float-y">
+            <img  src="images/Finance app_Flatline.svg" alt="Image">
+          </div>
+          <div data-aos="fade-up-right" class="col-lg-6 col-xl-5">
+            <div class="row gap-1 justify-content-center justify-content-md-start">
+              <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge1 mb-3 p-2">Primary</span>
+              <h2 class="col-12 text-center text-md-start">Advanced software Made simple</h2>
+              <p class="col-12 text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aliquid explicabo vero cumque eos error.</p>
+              <div class="col-12 mb-2 ">
+                <h3 class="h5 mb-3 text-center text-md-start">Lorem ipsum dolor.</h3>
+                <div class="d-flex flex-row justify-content-between align-items-center  gap-4 gap-md-3">
+                  <span class="icon2"><i class="myIcon p-2 rounded-circle fs-3 fas fa-pen-fancy"></i></span>
+                  <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <h3 class="h5 mb-2 text-center text-md-start">Lorem ipsum dolor.</h3>
+                <div class="d-flex flex-row justify-content-between  align-items-center gap-4 gap-md-3">
+                  <span class="icon2"><i class="myIcon p-2 rounded-circle fs-3 far fa-address-book"></i></span>
+                  <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!--====== End Fancy Text Block Section ======-->
+
+    <!--====== Start Fancy Text Block Section 2 ======-->
+    <section  data-aos="fade-left"class="hero4 position-relative px-4 py-5">
+      <svg class="position-absolute curve-four" id="10015.io" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+        <path fill="rgba(73, 71, 255, 0.48)" d="M384.5,273Q420,306,387.5,321Q355,336,349,377.5Q343,419,303.5,397.5Q264,376,241,371.5Q218,367,178.5,391.5Q139,416,134.5,374Q130,332,135.5,304Q141,276,115.5,258Q90,240,66.5,204Q43,168,60.5,136Q78,104,132,125.5Q186,147,196,98.5Q206,50,240.5,46Q275,42,300.5,67Q326,92,372,91.5Q418,91,365,152.5Q312,214,330.5,227Q349,240,384.5,273Z" />
+      </svg>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse justify-content-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 animated-float-y">
+            <img src="images/Financial Analyst_Flatline.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div data-aos="fade-right" class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere earum cupiditate voluptatibus nam aperiam molestiae quasi, dolor accusantium eos totam.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn myBtn3 btn-lg px-5 py-2 me-md-2 rounded-pill">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--====== End Fancy Text Block Section 2======-->
+
+    <!--====== Start Service Section ======-->
+    <section class="hero5 position-relative bgGradient3" id="featured-3">
+      <svg class="position-absolute curve-five" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#F22295" d="M59.3,-59.6C73.6,-45.1,79.7,-22.5,79.6,-0.1C79.4,22.3,73.1,44.6,58.9,57.7C44.6,70.9,22.3,74.9,0.7,74.1C-20.8,73.4,-41.6,67.9,-54.8,54.7C-68,41.6,-73.7,20.8,-74.4,-0.8C-75.2,-22.3,-71.1,-44.7,-57.9,-59.2C-44.7,-73.8,-22.3,-80.6,0.1,-80.7C22.5,-80.8,45.1,-74.2,59.3,-59.6Z" transform="translate(100 100)" />
+      </svg>
+      <div class="container">
+        <div data-aos="fade-up" class="row justify-content-center">
+            <div class='col-6 my-5'>
+              <div class="row justify-content-center">
+                <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge3 p-2">Lorem, ipsum dolor.</span>
+              </div>
+              <h2 class="text-center py-2 fw-bolder colorEight">Lorem ipsum dolor sit amet.</h2>
+            </div>
+        </div>
+        <div class="row gap-4 justify-content-center ">
+            <div data-aos="fade-up-left" class="myCard myCard1 cardHero5 col-xl-3 col-lg-6 col-md-6 col-sm-12 border shadow-lg rounded-1 py-4">
+                <i class="icon myIcon p-3 fs-3 mb-2 rounded-1 fa-regular fa-calendar-days"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, error ipsum. Sit sapiente earum esse!</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                </a>
+            </div>
+            <div data-aos="fade-left" class="myCard myCard1 cardHero5 col-xl-3 col-lg-6 col-md-6 col-sm-12 border shadow-lg rounded-1  py-4">
+                <i class="icon myIcon p-3 fs-3 mb-2 rounded-1 fas fa-landmark"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, error ipsum. Sit sapiente earum esse!</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                </a>
+            </div>
+            <div data-aos="fade-up-right" class="myCard myCard1 cardHero5 col-xl-3 col-lg-6 col-md-6 col-sm-12 border shadow-lg rounded-1  py-4">
+                <i class="icon myIcon p-3 fs-3 mb-2 rounded-1 fas fa-balance-scale"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, error ipsum. Sit sapiente earum esse!</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+            </div>
+            <div data-aos="fade-right" class="myCard myCard1 cardHero5 col-xl-3 col-lg-6 col-md-6 col-sm-12 border shadow-lg rounded-1 py-4">
+                <i class="icon myIcon p-3 fs-3 mb-2 rounded-1 fas fa-piggy-bank"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, error ipsum. Sit sapiente earum esse!</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                </a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--====== End Service Section ======-->
+
+    <!--====== Start Faq Section ======-->
+    <section class="px-md-4 py-5">
+    <div class="container  px-4 py-5">
+      <div class="row p-2 p-md-5 g-5">
+        <div class="col-lg-6 animated-float-x">
+          <img src="images/Accountant_Monochromatic.svg" alt="Image">
+        </div>
+        <div data-aos="fade-up" class="col-lg-6">
+          <div class="row gap-1 justify-content-center justify-content-md-start">
+            <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge1 mb-3 p-2">Lorem.</span>
+            <h2 class="col-12 text-center text-md-start">Lorem ipsum dolor sit.</h2>
+            <p class="col-12 text-center text-md-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aliquid explicabo vero cumque eos error.</p>
+            <div class="row gap-2">
+              <div class="shadow-sm p-0">
+                <h4 class="h5 accordion-header" id="headingTwo">
+                  <button class="myAccordionButton position-relative w-100 border-0 bgCero d-flex flex-row justify-content-sm-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <i class="me-3 colorThree p-3 fs-3 fas fa-question-circle"></i>
+                    <span>Lorem, ipsum dolor.1</span> 
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body p-4 text-muted">
+                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate sequi eos voluptates optio cumque odit quam quae, aut quisquam debitis esse quia vero at in dolores asperiores fugiat libero.
+                    Sit, vel, obcaecati temporibus vero minus saepe quidem doloribus eligendi sint, totam voluptatum tempore animi quaerat sequi aut natus non laboriosam reprehenderit praesentium beatae! Eos, impedit non. Mollitia, nesciunt doloribus.</code>,Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+              </div>
+              <div class="shadow-lg p-0">
+                <h4 class="h5 accordion-header" id="headingTwo">
+                  <button class="myAccordionButton position-relative w-100 border-0 bgCero d-flex flex-row justify-content-sm-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="me-3 colorThree p-3 fs-3 fas fa-question-circle"></i>
+                    <span>Lorem, ipsum dolor.2</span> 
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body p-4 text-muted">
+                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate sequi eos voluptates optio cumque odit quam quae, aut quisquam debitis esse quia vero at in dolores asperiores fugiat libero.
+                    Sit, vel, obcaecati temporibus vero minus saepe quidem doloribus eligendi sint, totam voluptatum tempore animi quaerat sequi aut natus non laboriosam reprehenderit praesentium beatae! Eos, impedit non. Mollitia, nesciunt doloribus.</code>,Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+              </div>
+              <div class="shadow-lg p-0">
+                <h4 class="h5 accordion-header" id="headingThree">
+                  <button class="myAccordionButton position-relative w-100 border-0 bgCero d-flex flex-row justify-content-sm-start align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="me-3 colorThree p-3 fs-3 fas fa-question-circle"></i>
+                    <span>Lorem, ipsum dolor.3</span> 
+                  </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body p-4 text-muted">
+                    <strong>Lorem ipsum dolor sit amet consectetur.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cupiditate sequi eos voluptates optio cumque odit quam quae, aut quisquam debitis esse quia vero at in dolores asperiores fugiat libero.
+                    Sit, vel, obcaecati temporibus vero minus saepe quidem doloribus eligendi sint, totam voluptatum tempore animi quaerat sequi aut natus non laboriosam reprehenderit praesentium beatae! Eos, impedit non. Mollitia, nesciunt doloribus.</code>,Lorem ipsum dolor sit amet consectetur.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+    <!--====== End Faq Section ======-->
+
+    <!--====== Start Testimonial Section ======-->
+    <section class="hero7 position-relative px-4 bgGradient2" id="featured-3">
+      <svg class="position-absolute curve-seven"  viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#F22295" d="M18.8,-22.3C27.5,-23.7,39.9,-23.8,51.8,-17.8C63.7,-11.8,75,0.3,70.1,7.6C65.1,14.8,43.8,17.1,31.6,22.5C19.4,28,16.3,36.5,8.2,47.9C0.2,59.3,-12.9,73.7,-24.2,74.2C-35.6,74.6,-45.3,61.2,-56.8,48.8C-68.4,36.4,-81.7,25,-78.4,14.4C-75.1,3.7,-55.2,-6.2,-44,-15.7C-32.8,-25.2,-30.4,-34.4,-24.5,-34.3C-18.6,-34.3,-9.3,-25.1,-2.1,-21.7C5,-18.4,10.1,-21,18.8,-22.3Z" transform="translate(100 100)" />
+      </svg>
+      <div data-aos="fade-up-left" class="container">
+        <div class="row justify-content-center">
+            <div class='col-6 my-5'>
+              <div class="row justify-content-center">
+                <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge2 p-2">Lorem, ipsum dolor.</span>
+              </div>
+              <h2 class="text-center py-2 fw-bolder colorOne">Lorem ipsum dolor sit amet.</h2>
+            </div>
+        </div>
+               <!-- Swiper -->
+        <div class="row gap-3 justify-content-center py-3 swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex flex-column gap-3">
+              <div class="title-slide d-flex flex-row border-bottom gap-2">
+                <i class="myIcon p-2 fs-2 rounded-1 mb-3 fas fa-user-shield"></i>
+                <div>
+                  <h5 class="h4 ms-3">Marisa.</h5>
+                  <span>Lawyer</span>
+                </div>
+              </div>
+              <p class="text-center text-md-start">Aperiam exercitationem nihil delectus corporis minima hic libero enim natus, possimus, voluptates repudiandae, magni provident quod mollitia? Earum quisquam sunt aperiam eaque.</p>
+            </div>
+            <div class="swiper-slide d-flex flex-column gap-3">
+              <div class="title-slide d-flex flex-row border-bottom">
+                <i class="myIcon p-2 fs-2 rounded-1 mb-3 fas fa-user-ninja"></i>
+                <div>
+                  <h5 class="h4 ms-3">Christian.</h5>
+                  <span>Designer</span>
+                </div>
+              </div>
+              <p class="text-center text-md-start">Aperiam exercitationem nihil delectus corporis minima hic libero enim natus, possimus, voluptates repudiandae, magni provident quod mollitia? Earum quisquam sunt aperiam eaque.</p>
+            </div>
+            <div class="swiper-slide d-flex flex-column gap-3">
+              <div class="title-slide d-flex flex-row border-bottom">
+                <i class="myIcon p-2 fs-2 rounded-1 mb-3 fas fa-user-alt"></i>
+                <div>
+                  <h5 class="h4 ms-3">Damian.</h5>
+                  <span>Student</span>
+                </div>
+              </div>
+              <p class="text-center text-md-start">Aperiam exercitationem nihil delectus corporis minima hic libero enim natus, possimus, voluptates repudiandae, magni provident quod mollitia? Earum quisquam sunt aperiam eaque.</p>
+            </div>
+            <div class="swiper-slide d-flex flex-column gap-3">
+              <div class="title-slide d-flex flex-row border-bottom">
+                <i class="myIcon p-2 fs-2 rounded-1 mb-3 fas fa-user-md"></i>
+                <div>
+                  <h5 class="h4 ms-3">Brenda.</h5>
+                  <span>Teacher</span>
+                </div>
+              </div>
+              <p class="text-center text-md-start">Aperiam exercitationem nihil delectus corporis minima hic libero enim natus, possimus, voluptates repudiandae, magni provident quod mollitia? Earum quisquam sunt aperiam eaque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+    <!--====== End Testimonial Section ======-->
+
+    <!--====== Start Blog Section ======-->
+    <section class="px-md-4 py-5 bg-opacity-10" id="featured-3">
+      <div data-aos="fade-up" class="container">
+        <div class="row justify-content-center">
+            <div class='col-6 my-5'>
+              <div class="row justify-content-center">
+                <span class="col-12 col-md-6 col-lg-4 badge rounded-pill myBadge1 p-2">Lorem, ipsum dolor.</span>
+              </div>
+              <h2 class="text-center py-2 fw-bolder">Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
+            </div>
+        </div>
+        <div class="row gap-3 justify-content-center py-3 ">
+            <div class="myCard feature col-md-5  col-lg-4 border shadow-lg rounded-1 px-3 py-4">
+                <i class="icon display-4 mb-3 colorThree fas fa-hands-helping"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae, mollitia minus nostrum quibusdam quasi inventore sit asperiores voluptate. Quis natus eius cumque molestiae non soluta vitae obcaecati nisi minima.</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                </a>
+            </div>
+            <div class="myCard feature col-md-5  col-lg-4 border shadow-lg rounded-1 px-3 py-4">
+                <i class="icon display-4 mb-3 colorThree far fa-lightbulb"></i>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor libero suscipit eveniet repudiandae reprehenderit laborum tempora inventore, cumque quam doloremque pariatur deserunt accusantium dolorem nulla molestias! Veniam ea at doloribus.</p>
+                <a href="#" class="icon-link d-inline-flex align-items-center text-decoration-underline">
+                    Lorem, ipsum dolor.
+                </a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--====== End Blog Section ======-->
+
+    <!--====== Newsletter Section ====== -->
+    <section class="bg-dark py-5 py-md-4">
+      <div class="container colorOne">
+        <div class="row align-items-center">
+          <div data-aos="fade-up" class="col-lg-6 text-center text-lg-start ps-lg-5">                        
+            <h2  class="display-3 ps-lg-2">Lorem ipsum dolor sit amet.</h2>
+            <form>
+              <h5 class="ps-lg-2">Lorem ipsum dolor sit.</h5>
+              <p class="ps-lg-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class=" d-block rounded-pill position-relative">
+                <input type="email" class="d-block formControl w-100 " placeholder="Email Adress...." name="name" required="">
+                <button class="myBtn3 fs-5 border-0 btnSuscribe px-5 py-3 rounded-pill position-absolute">Subscribe Now</button>
+              </div>
+            </form>
+          </div>
+          <div class="imgSuscribeContainer col-lg-6">
+            <img class="imgSuscribe" src="images/Notifications_Isometric.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Newsletter Section -->    
+  </main>
+           
+   <!--====== Start Footer ======-->
+    <footer class="container">
+      <div data-aos="fade-up" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-5 text-center">
+        <div class="col mb-3" data-aos="fade-up" data-aos-delay="30">
+          <div class="site-branding">
+              <a href="index.html">IMAGEN LOGO</a>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, tenetur.</p>
+          <ul class="social-link fs-4 d-flex justify-content-evenly">
+            <li class="li"><a class="a" href="#"><i class="i fab fa-twitter"></i></a></li>
+            <li class="li"><a class="a" href="#"><i class="i fab fa-facebook-f"></i></a></li>
+            <li class="li"><a class="a" href="#"><i class="i fab fa-instagram"></i></a></li>
+            <li class="li"><a class="a" href="#"><i class="i fab fa-linkedin-in"></i></a></li>
+          </ul>
+      </div>
+    
+        <div class="col mb-3">
+          <h5>Page</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Services</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Documentation</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">License</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Changelog</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Clients</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Information</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">+123 - 589 - 847</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">sasa@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">1550 Lorem, ipsum dolor. NC 279499</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container  border-top">
+        <div class="row py-3 my-4">
+          <span class="col-12 mb-3 mb-md-0 text-muted text-center">© 2022 Company, Inc</span>
+      </div>
+    </footer>
+    <!--====== End Footer ======-->
+    
+    <!--====== Bootstrap js: Popper js ======-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--===== Fontawesome Js =====-->
+    <script src="https://kit.fontawesome.com/3a8d6dd445.js" crossorigin="anonymous"></script>
+    <!--====== AOS js ======-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--===== Swiper JS =====-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- ==== Main Js===== -->
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+/*header*/
+
+header{
+    .nav{ background: rgb(87,156,70);
+        background: linear-gradient(180deg, rgba(97, 221, 66, 0.841) 0%, rgb(146, 207, 129) 95%, rgb(154, 209, 140) 100%);
+        body.dark & {
+            background-image: linear-gradient(180deg, rgb(112, 138, 107) 0%, rgb(88, 128, 85)100%);
+
+        }
+    }
+    .navAdicional{
+        background-color: #f1f1f1;
+        body.dark & {
+            background-image: linear-gradient(160deg, rgb(113, 158, 110), rgb(89, 116, 87));
+        }
+    }
+}
+.logo1{
+    max-width: 80px;
+    height: 40px;
+}

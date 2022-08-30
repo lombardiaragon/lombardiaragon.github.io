@@ -1,0 +1,115 @@
+/*cuerpo*/
+
+.textos{
+    color: $oscuro;
+    body.dark & {
+        color: $claro;
+    }
+}
+
+
+.nosotrosHero{
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    background-color: rgb(202, 231, 189);
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/img/abuelos.jpg');
+        background-attachment: fixed;
+        filter: opacity(.2);
+        body.dark &{
+            filter: brightness(.54);
+        }
+    }
+    h1{
+        position: relative;
+        color: $oscuro;
+    }
+    div p{
+        position: relative;
+        color: $oscuro;
+    }
+}
+.nosotros2{
+    background-color: #dfdfdf;
+    body.dark &{
+        background-color: #354538;
+    }
+}
+
+
+.imgAbuelos{
+    background-attachment: fixed;
+}
+
+.fotoNos{
+    max-height: 250px;
+}
+
+
+.articulos{
+    background-color:$fondoClaroArticulos;
+    color: $oscuro;
+    body.dark & {
+        background-color: $fondoOscuroArticulos;
+        color: $claro;
+    }
+
+}
+
+main{
+    min-height: 100vh;
+}
+.preguntas1{
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    background-color: rgb(202, 231, 189);
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/img/fondoHero.jpg');
+        background-attachment: fixed;
+        filter: opacity(.2);
+        body.dark &{
+            filter: brightness(.54);
+        }
+    }
+    h1{
+        position: relative;
+        color: $oscuro;
+    }
+}
+
+.mihero{
+    min-height: 100vh;
+    background-image: url('/img/fondoHero.jpg');
+    background-attachment: fixed;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/img/fondoHero.jpg');
+        body.dark &{
+            filter: brightness(.54);
+        }
+    }
+    h1,h2,p{
+        position: relative;
+        color: $oscuro;
+        max-width: 65%;
+        body.dark &{
+            color: $claro;
+        }
+    }
+    
+}
+
+.anchoCard{
+    width: 15rem;
+}
